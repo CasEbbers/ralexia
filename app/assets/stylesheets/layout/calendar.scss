@@ -1,0 +1,64 @@
+.calendar {
+  @include box-shadow(0 2px 2px #888);
+  @include gradient-vertical(#ededef, #ccc);
+  border-radius: 3px;
+  color: $text-color;
+  font: bold 30px/60px Arial Black, Arial, Helvetica, sans-serif;
+  margin: .25em 10px 10px 0;
+  padding-top: 5px;
+  position: relative;
+  text-align: center;
+  text-shadow: #fff 0 1px 0;
+  width: 100%;
+
+  em {
+    @include border-bottom-radius(3px);
+    @include gradient-vertical(#04599a, #00365a);
+    border-top: 1px solid #00365a;
+    color: #fff;
+    display: block;
+    font: normal bold 11px/30px Arial, Helvetica, sans-serif;
+    text-shadow: #00365a 0 -1px 0;
+
+    &::before,
+    &::after {
+      @include gradient-vertical(#f1f1f1, #aaa);
+      border-radius: 2px;
+      content: '';
+      height: 14px;
+      position: absolute;
+      top: -5px;
+      width: 4px;
+      z-index: 2;
+    }
+
+    &::before {
+      left: 13px;
+    }
+
+    &::after {
+      right: 13px;
+    }
+  }
+
+  &::before,
+  &::after {
+    @include box-shadow(0 1px 1px #fff);
+    background: #111;
+    border-radius: 10px;
+    content: '';
+    height: 8px;
+    position: absolute;
+    top: 5px;
+    width: 8px;
+    z-index: 1;
+  }
+
+  &::before {
+    left: 11px;
+  }
+
+  &::after {
+    right: 11px;
+  }
+}

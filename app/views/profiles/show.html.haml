@@ -1,0 +1,29 @@
+.page-profile
+  %h1
+    %span
+      = current_user.name
+  .row
+    .col-md-offset-4.col-md-4
+      %dl.dl-horizontal
+        %dt Username
+        %dd= current_user.username
+        %dt Full name
+        %dd= current_user.name
+        %dt E-mail
+        %dd= current_user.email
+  .btn-group.btn-group-lg.btn-group-justified
+    %a.btn.btn-default
+      %h2
+        %span.glyphicon.glyphicon-euro
+        732
+      %p Transacties
+    %a.btn.btn-default
+      %h2
+        %span.glyphicon.glyphicon-ok
+        145
+      %p Activiteiten bijgewoond
+    %a.btn.btn-default
+      %h2
+        %span.glyphicon.glyphicon-credit-card
+        3
+      %p Kaarten geregistreerd

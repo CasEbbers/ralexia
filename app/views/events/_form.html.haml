@@ -1,0 +1,22 @@
+= simple_form_for event, html: { class: 'form-horizontal' } do |f|
+  .form-group
+    %label.control-label.col-sm-2= _('Organizer')
+    .col-sm-10
+      %p.form-control-static
+        - if event.new_record?
+          = current_organization.name
+        - else
+          = event.organizer.name
+  = f.association :organizations, as: :check_boxes, hint: _('The bartenders of other participating organizations can also enroll.')
+  = f.association :locations, as: :check_boxes
+  = f.input :name
+  = f.input :starts_at
+  = f.input :ends_at
+  = f.input :enrollment_closed, hint: _('Designates if tenders can sign up for this event.')
+  = f.input :option, hint: _('Designates that this event is not definitive yet.')
+  = f.input :risky, hint: _('Designates that this event should be marked as risky.')
+  = f.input :kegs, input_html: { min: 0 }
+  = f.input :bartender_instruction
+
+  = f.actions do
+    = f.button :submit

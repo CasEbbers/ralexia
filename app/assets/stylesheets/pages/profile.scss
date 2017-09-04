@@ -1,0 +1,22 @@
+.page-profile {
+  h1 {
+    position: relative;
+    text-align: center;
+
+    &::before {
+      background-color: $gray-lighter;
+      content: '';
+      height: 1px;
+      left: 0;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      z-index: -1;
+    }
+
+    > span {
+      background-color: $body-bg;
+      padding: 0 20px;
+    }
+  }
+}

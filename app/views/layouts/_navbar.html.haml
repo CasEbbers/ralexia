@@ -1,0 +1,12 @@
+%nav.navbar.navbar-default.navbar-fixed-top
+  .container
+    .navbar-header
+      %button.navbar-toggle.collapsed{ type: 'button', data: { toggle: 'collapse', target: '#navbar' } }
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to image_tag('alexia'), root_path, class: 'navbar-brand'
+
+    .navbar-collapse.collapse#navbar
+      = render 'layouts/nav/default' if current_user
+      = render 'layouts/nav/right'

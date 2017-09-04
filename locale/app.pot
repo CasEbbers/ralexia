@@ -1,0 +1,313 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the app package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: app 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-12 21:51+0200\n"
+"PO-Revision-Date: 2017-06-12 21:51+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgid "%{event} deleted"
+msgstr ""
+
+msgid "%{location} is occupied"
+msgstr ""
+
+msgid "%{user} has been deleted."
+msgstr ""
+
+msgid "%{user} of %{organization}"
+msgstr ""
+
+msgid "(no organization)"
+msgstr ""
+
+msgid "(none)"
+msgstr ""
+
+msgid "Add user"
+msgstr ""
+
+msgid "Alexia, Prinses der Nederlanden"
+msgstr ""
+
+msgid "Are you sure?"
+msgstr ""
+
+msgid "Bartender"
+msgstr ""
+
+msgid "Bartenders"
+msgstr ""
+
+msgid "Can create and modify events"
+msgstr ""
+
+msgid "Can enroll for events"
+msgstr ""
+
+msgid "Can manage users"
+msgstr ""
+
+msgid "Date"
+msgstr ""
+
+msgid "Designates if tenders can sign up for this event."
+msgstr ""
+
+msgid "Designates that this event is not definitive yet."
+msgstr ""
+
+msgid "Designates that this event should be marked as risky."
+msgstr ""
+
+msgid "E-mail"
+msgstr ""
+
+msgid "Edit event"
+msgstr ""
+
+msgid "Edit user"
+msgstr ""
+
+msgid "End"
+msgstr ""
+
+msgid "Enrollment type"
+msgstr ""
+
+msgid "EnrollmentType|Name"
+msgstr ""
+
+msgid "EnrollmentType|Nature"
+msgstr ""
+
+msgid "Event"
+msgstr ""
+
+msgid "Event is succesfully updated."
+msgstr ""
+
+msgid "Event|Bartender instruction"
+msgstr ""
+
+msgid "Event|Ends at"
+msgstr ""
+
+msgid "Event|Enrollment closed"
+msgstr ""
+
+msgid "Event|Kegs"
+msgstr ""
+
+msgid "Event|Name"
+msgstr ""
+
+msgid "Event|Option"
+msgstr ""
+
+msgid "Event|Risky"
+msgstr ""
+
+msgid "Event|Starts at"
+msgstr ""
+
+msgid "Help"
+msgstr ""
+
+msgid "Here are some options you might consider:"
+msgstr ""
+
+msgid "IVA"
+msgstr ""
+
+msgid "Inactive"
+msgstr ""
+
+msgid "Incorrect username/password"
+msgstr ""
+
+msgid "Kegs"
+msgstr ""
+
+msgid "Last login"
+msgstr ""
+
+msgid "Last tended"
+msgstr ""
+
+msgid "Location"
+msgstr ""
+
+msgid "Location|Color"
+msgstr ""
+
+msgid "Location|Name"
+msgstr ""
+
+msgid "Location|Prevents conflict"
+msgstr ""
+
+msgid "Log in"
+msgstr ""
+
+msgid "Log in with your student or employee account and password."
+msgstr ""
+
+msgid "Log out"
+msgstr ""
+
+msgid "Manager"
+msgstr ""
+
+msgid "Membership"
+msgstr ""
+
+msgid "Membership|Active"
+msgstr ""
+
+msgid "Membership|Bartender"
+msgstr ""
+
+msgid "Membership|Manager"
+msgstr ""
+
+msgid "Membership|Planner"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "New event"
+msgstr ""
+
+msgid "Oops!"
+msgstr ""
+
+msgid "Organization"
+msgstr ""
+
+msgid "Organization|Color"
+msgstr ""
+
+msgid "Organization|Name"
+msgstr ""
+
+msgid "Organization|Slug"
+msgstr ""
+
+msgid "Organizer"
+msgstr ""
+
+msgid "Participants"
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+msgid "Planner"
+msgstr ""
+
+msgid "Planning"
+msgstr ""
+
+msgid "Previous page"
+msgstr ""
+
+msgid "Print"
+msgstr ""
+
+msgid "Profile"
+msgstr ""
+
+msgid "Receives e-mail notifications"
+msgstr ""
+
+msgid "Risky event"
+msgstr ""
+
+msgid "Roles"
+msgstr ""
+
+msgid "Start"
+msgstr ""
+
+msgid "Student or employee account"
+msgstr ""
+
+msgid "Temporary products"
+msgstr ""
+
+msgid "Tended"
+msgstr ""
+
+msgid "The bartenders of other participating organizations can also enroll."
+msgstr ""
+
+msgid "This page requires an active organization."
+msgstr ""
+
+msgid "Time"
+msgstr ""
+
+msgid "To the home page"
+msgstr ""
+
+msgid "User"
+msgstr ""
+
+msgid "Users"
+msgstr ""
+
+msgid "Users of %{organization}"
+msgstr ""
+
+msgid "User|Admin"
+msgstr ""
+
+msgid "User|Email"
+msgstr ""
+
+msgid "User|First name"
+msgstr ""
+
+msgid "User|Last login"
+msgstr ""
+
+msgid "User|Last name"
+msgstr ""
+
+msgid "User|Password digest"
+msgstr ""
+
+msgid "User|Username"
+msgstr ""
+
+msgid "You arrived on a page that doesn't exist."
+msgstr ""
+
+msgid "You arrived on a page you don't have access to."
+msgstr ""
+
+msgid "already member"
+msgstr ""
+
+msgid "can't be before the end"
+msgstr ""
+
+msgid "does not accept tenders from %{organization}"
+msgstr ""
+
+msgid "is already a member"
+msgstr ""

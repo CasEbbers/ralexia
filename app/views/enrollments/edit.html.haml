@@ -1,0 +1,13 @@
+= simple_form_for [@event, @enrollment], url: event_enrollments_path(@event), method: :post, html: { class: 'form-horizontal' } do |f|
+  = f.association :user, as: :hidden
+  .form-group
+    %label.control-label.col-sm-2= _('Event')
+    .col-sm-10
+      %p.form-control-static= link_to @event.name, @event
+  .form-group
+    %label.control-label.col-sm-2= _('Bartender')
+    .col-sm-10
+      %p.form-control-static= @enrollment.user.name
+  = f.association :enrollment_type, collection: current_organization.enrollment_types
+  = f.actions do
+    = f.button :submit

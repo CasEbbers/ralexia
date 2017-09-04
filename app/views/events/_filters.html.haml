@@ -1,0 +1,31 @@
+.panel-group
+  .panel.panel-default
+    .panel-heading
+      = link_to 'Filters', '#filters', data: { toggle: 'collapse' }
+    .panel-collapse.collapse#filters
+      .panel-body
+        = search_form_for @q, html: { class: 'form-horizontal' } do |f|
+          .form-group
+            = f.label :locations_id_in, _('Locations'), class: 'control-label col-md-2'
+            .col-md-10
+              = f.collection_check_boxes :locations_id_in, Location.all, :id, :name do |b|
+                - content_tag(:div, b.label{ b.check_box + b.text }, class: 'checkbox')
+
+          .form-group
+            = f.label :organizer_id_eq, _('Organizer'), class: 'control-label col-md-2'
+            .col-md-10
+              = f.collection_select :organizer_id_eq, Organization.all, :id, :name, { include_blank: _('(all)') }, { class: 'form-control' }
+
+          .form-group
+            = f.label :starts_at_gteq_datetime, _('From'), class: 'control-label col-md-2'
+            .col-md-10.form-inline
+              = f.date_select :starts_at_gteq_datetime, { default: DateTime.now }, { class: 'form-control' }
+
+          .form-group
+            = f.label :starts_at_lteq_datetime, _('Till'), class: 'control-label col-md-2'
+            .col-md-10.form-inline
+              = f.date_select :starts_at_lteq_datetime, { include_blank: true }, { class: 'form-control' }
+
+          .form-group
+            .col-md-10.col-md-offset-2
+              = f.submit _('Filter'), class: 'btn btn-primary'

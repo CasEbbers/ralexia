@@ -1,0 +1,34 @@
+- page_title _('Planning')
+
+.page-header.clearfix
+  %h1
+    = icon('calendar')
+    = _('Planning')
+    - if can?(:create, Event)
+      .pull-right
+        = link_to new_event_path, class: 'btn btn-primary' do
+          = icon('calendar-plus-o')
+          = _('New event')
+
+= render 'filters'
+
+%table.table.table-condensed.table-schedule
+  %thead
+    %tr
+      %th= _('Date')
+      %th= _('Time')
+      %th= _('Organization')
+      %th= _('Location')
+      %th= _('Name')
+      %th= _('Bartenders')
+      - if current_user
+        %th= _('Kegs')
+        %th= _('IVA')
+        - if current_user.bartender?
+          %th
+        - if current_user.planner?
+          %th
+  %tbody
+    - @events.each do |_day, events|
+      - events.each_with_index do |event, i|
+        = render event, first: i.zero?, events_today: events.count

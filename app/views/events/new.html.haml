@@ -1,0 +1,8 @@
+- page_title _('New event')
+
+.page-header
+  %h1
+    = icon('calendar-plus-o')
+    = _('New event')
+
+= render 'form', event: @event

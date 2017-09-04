@@ -1,0 +1,59 @@
+- page_title _('Users')
+
+.page-header.clearfix
+  %h1
+    = icon('users')
+    = _('Users of %{organization}') % { organization: current_organization.name }
+    .pull-right
+      = link_to new_membership_path, class: 'btn btn-primary' do
+        = icon('user-plus')
+        = _('Add user')
+      \
+      = link_to new_membership_path, class: 'btn btn-default' do
+        = icon('print')
+        = _('Print')
+
+.table-responsive
+  %table.table.table-bordered.table-striped.table-condensed
+    %thead
+      %tr
+        %th #
+        %th= _('Name')
+        %th= _('Roles')
+        %th= _('IVA')
+        %th= _('Tended')
+        %th= _('Last tended')
+        %th= _('Last login')
+        %th
+    %tbody
+      - @memberships.each_with_index do |membership, i|
+        %tr
+          %td
+            = i + 1
+          %td.text-muted
+            = link_to membership.user.name, membership, { class: ('text-muted' unless membership.active?) }
+            = content_tag(:span, nil, class: 'glyphicon glyphicon-ban-circle', title: _('Inactive')) unless membership.active?
+          %td
+            %span.label.label-default= _('Bartender') if membership.bartender?
+            %span.label.label-default= _('Planner')   if membership.planner?
+            %span.label.label-default= _('Manager')   if membership.manager?
+          %td
+            = icon('times', class: 'text-danger')
+          %td
+            - if membership.user.tended_count > 0
+              = membership.user.tended_count
+            - else
+              &mdash;
+          %td
+            - if membership.user.last_tended_event
+              %span{ title: "#{membership.user.last_tended_event.name}" }= l membership.user.last_tended_event.starts_at.to_date, format: :long
+            - else
+              &mdash;
+          %td
+            - if membership.user.last_login
+              = time_ago_in_words(membership.user.last_login)
+            - else
+              &mdash;
+          %td
+            = link_to icon('pencil'), edit_membership_path(membership)
+            = link_to icon('trash'), membership_path(membership), method: :delete, data: { confirm: _('Are you sure?') }

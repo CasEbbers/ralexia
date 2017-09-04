@@ -1,0 +1,34 @@
+.table-schedule {
+  > tbody {
+    > tr {
+      > td {
+        vertical-align: middle;
+
+        &.date {
+          vertical-align: top;
+          width: 140px;
+
+          .monthday {
+            float: left;
+            font-size: 35px;
+            line-height: 35px;
+            margin-right: 10px;
+            text-align: right;
+            width: 40px;
+          }
+
+          .month {
+            font-size: .75em;
+          }
+        }
+
+        &.time { width: 110px; }
+        &.organization { width: 140px; }
+        &.location { width: 90px; }
+        &.kegs { text-align: center; width: 54px; }
+        &.iva { text-align: center; width: 33px; }
+        &.actions { width: 37px; }
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+%tr{ id: "event_#{event.id}" }
+
+  - if first
+    %td.date{ rowspan: events_today }
+      .monthday= event.starts_at.day
+      .weekday= l(event.starts_at, format: '%A')
+      .month= l(event.starts_at, format: '%B %Y')
+
+  %td.time
+    = l(event.starts_at, format: '%H:%M')
+    &mdash;
+    - if event.long?
+      %abbr{ title: l(event.ends_at, format: '%e %B %Y') }= l(event.ends_at, format: '%H:%M')
+    - else
+      = l(event.ends_at, format: '%H:%M')
+
+  %td.organization
+    = organization_with_logo(event.organizer)
+    - if event.organizations.count > 1
+      = link_to "#event_#{event.id}_organizations", data: { toggle: 'collapse' } do
+        %span.label.label-primary{ title: event.organizations.map(&:name).join(', ') }= "+#{event.organizations.count - 1}"
+      = collapsed_organizations(event)
+
+  %td.location
+    = event.locations.map(&:name).join('<br>').html_safe
+
+  %td
+    = link_to event.name, event
+    - if event.risky?
+      %span.label.label-warning{ title: _('Risky event') }
+        = icon('exclamation-triangle')
+
+  %td.bartenders_event{ id: "bartenders_event_#{event.id}" }
+    - if event.assigned_bartenders.count >= 10
+      %span.text-muted
+        = icon('users')
+        = "(#{event.assigned_bartenders.count} tappers)"
+    - else
+      %span= event.assigned_bartenders.map(&:first_name).join(', ')
+
+  - if current_user
+    %td.kegs
+      - unless event.kegs.zero?
+        = event.kegs unless event.kegs.zero?
+
+    %td.iva
+      - unless event.kegs.zero?
+        = icon('times', class: 'text-danger')
+
+    - if current_user.bartender?
+      %td
+        - if event.organizations.exists?(current_organization&.id)
+          = form_tag(event_enrollments_path(event), class: 'form-inline') do
+            - selected = Enrollment.find_by(user: current_user, event: event)&.enrollment_type_id
+            = select :enrollment, :enrollment_type_id,
+              options_from_collection_for_select(current_organization.enrollment_types, :id, :name, selected),
+              { prompt: '---' },
+              { class: 'form-control input-sm update-enrollment' }
+
+    - if current_user.planner?
+      %td.actions
+        - if can?(:update, event)
+          = link_to icon('pencil'), edit_event_path(event)
+          = link_to icon('trash'), event_path(event), method: :delete, data: { confirm: _('Are you sure?') }

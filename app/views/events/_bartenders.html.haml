@@ -1,0 +1,14 @@
+.panel.panel-default
+  .panel-heading
+    %h3.panel-title= _('Bartenders')
+  .panel-body
+    %table.table.table-condensed
+      %tbody
+        - @event.bartenders_with_enrollments.each do |membership, enrollment|
+          %tr
+            %td.col-xs-6.text-right
+              - if @event.organizations.count > 1
+                = image_tag("organization/#{membership.organization.slug}", size: '17x17')
+              = link_to membership.user.name, membership
+            %td.col-xs-6
+              = link_to enrollment_label(enrollment), edit_event_enrollment_path(@event, id: membership.user.id)

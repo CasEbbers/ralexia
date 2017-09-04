@@ -1,0 +1,33 @@
+.row
+  .col-xs-2
+    %p.calendar
+      = @event.starts_at.day
+      %em= l @event.starts_at, format: '%B'
+    = image_tag "organization/#{@event.organizer.slug}"
+  .col-xs-10
+    .panel.panel-default
+      .panel-body
+        %h2
+          = @event.name
+          %small= @event.locations.map(&:name).join(', ')
+        %table.table
+          %tr
+            %th= _('Organizer')
+            %td= @event.organizer.name
+          - if @event.organizations.count > 1
+            %tr
+              %th= _('Participants')
+              %td= @event.organizations.map(&:name).join(', ')
+          %tr
+            %th= _('Start')
+            %td= l @event.starts_at, format: '%A %d %B %Y - %H:%M'
+          %tr
+            %th= _('End')
+            %td= l @event.ends_at, format: '%A %d %B %Y - %H:%M'
+          %tr
+            %th= _('Bartenders')
+            %td
+              - if @event.assigned_bartenders.any?
+                = @event.assigned_bartenders.map(&:first_name).join(', ')
+              - else
+                %span.text-muted= _('(none)')

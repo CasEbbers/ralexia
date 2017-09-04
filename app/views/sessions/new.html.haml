@@ -1,0 +1,19 @@
+- page_title 'Login'
+
+.row
+  .col-xs-12.col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3
+    .well.text-center
+      %h2
+        = _('Log in')
+      %p
+        = _('Log in with your student or employee account and password.')
+      = form_tag login_path, class: 'form-horizontal' do
+        .form-group
+          = label_tag :email, _('User|Email'), class: 'control-label col-sm-3'
+          .col-sm-9
+            = text_field_tag :email, params[:email], class: 'form-control'
+        .form-group
+          = label_tag :password, _('Password'), class: 'control-label col-sm-3'
+          .col-sm-9
+            = password_field_tag :password, nil, class: 'form-control'
+        = submit_tag _('Log in'), class: 'btn btn-primary'

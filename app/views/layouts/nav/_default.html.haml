@@ -1,0 +1,3 @@
+%ul.nav.navbar-nav
+  = nav_link_to _('Planning'), events_path, 'events'
+  = nav_link_to _('Users'), memberships_path, 'memberships' if can?(:manage, Membership)

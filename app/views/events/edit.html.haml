@@ -1,0 +1,8 @@
+- page_title _('Edit event')
+
+.page-header
+  %h1
+    = icon('calendar')
+    = @event.name
+
+= render 'form', event: @event

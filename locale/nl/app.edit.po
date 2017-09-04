@@ -1,0 +1,348 @@
+# Dutch translations for app package.
+# Copyright (C) 2017 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the app package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: app 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2017-06-06 17:49+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Dutch\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"\n"
+
+msgid "%{event} deleted"
+msgstr "%{event} verwijderd"
+
+msgid "%{location} is occupied"
+msgstr "%{location} is bezet"
+
+msgid "%{user} has been deleted."
+msgstr ""
+
+msgid "%{user} of %{organization}"
+msgstr "%{user} van %{organization}"
+
+msgid "(no organization)"
+msgstr "(geen organisatie)"
+
+msgid "(none)"
+msgstr "(geen)"
+
+msgid "Add user"
+msgstr "Gebruiker toevoegen"
+
+msgid "Alexia, Prinses der Nederlanden"
+msgstr "Alexia, Prinses der Nederlanden"
+
+msgid "Are you sure?"
+msgstr "Weet je het zeker?"
+
+msgid "Bartender"
+msgstr "Tapper"
+
+msgid "Bartenders"
+msgstr "Tappers"
+
+msgid "Can create and modify events"
+msgstr "Kan evenementen aanmaken en wijzigen"
+
+msgid "Can enroll for events"
+msgstr "Kan inschrijven voor evenementen"
+
+msgid "Can manage users"
+msgstr "Kan gebruikers beheren"
+
+msgid "Date"
+msgstr "Datum"
+
+msgid "Designates if tenders can sign up for this event."
+msgstr "Geeft aan of tappers zich kunnen inschrijven."
+
+msgid "Designates that this event is not definitive yet."
+msgstr "Geeft aan dat dit evenement nog niet definitief is."
+
+msgid "Designates that this event should be marked as risky."
+msgstr "Geeft aan dat dit een risicoactiviteit is."
+
+msgid "E-mail"
+msgstr "E-mailadres"
+
+msgid "Edit event"
+msgstr ""
+
+#, fuzzy
+msgid "Edit user"
+msgstr "Gebruiker toevoegen"
+
+msgid "End"
+msgstr "Einde"
+
+msgid "Enrollment type"
+msgstr ""
+
+#, fuzzy
+msgid "EnrollmentType|Name"
+msgstr "Naam"
+
+msgid "EnrollmentType|Nature"
+msgstr ""
+
+msgid "Event"
+msgstr "Evenement"
+
+msgid "Event is succesfully updated."
+msgstr "Evenement is succesvol bijgewerkt."
+
+#, fuzzy
+msgid "Event|Bartender instruction"
+msgstr "Tapper"
+
+#, fuzzy
+msgid "Event|Ends at"
+msgstr "Einde"
+
+#, fuzzy
+msgid "Event|Enrollment closed"
+msgstr "Evenement"
+
+#, fuzzy
+msgid "Event|Kegs"
+msgstr "Evenement"
+
+msgid "Event|Name"
+msgstr "Naam"
+
+#, fuzzy
+msgid "Event|Option"
+msgstr "Evenement"
+
+#, fuzzy
+msgid "Event|Risky"
+msgstr "Evenement"
+
+#, fuzzy
+msgid "Event|Starts at"
+msgstr "Evenement"
+
+msgid "Help"
+msgstr "Help"
+
+msgid "Here are some options you might consider:"
+msgstr "Misschiel helpt dit je op weg:"
+
+msgid "IVA"
+msgstr "IVA"
+
+msgid "Inactive"
+msgstr "Inactief"
+
+msgid "Incorrect username/password"
+msgstr "Foute combinatie van gebruikersnaam/wachtwoord"
+
+msgid "Kegs"
+msgstr "Fusten"
+
+msgid "Last login"
+msgstr "Laatste login"
+
+msgid "Last tended"
+msgstr "Laatst getapt"
+
+msgid "Location"
+msgstr "Locatie"
+
+msgid "Location|Color"
+msgstr "Kleur"
+
+msgid "Location|Name"
+msgstr "Naam"
+
+msgid "Location|Prevents conflict"
+msgstr "Voorkom conflicterende activiteiten"
+
+msgid "Log in"
+msgstr "Inloggen"
+
+msgid "Log in with your student or employee account and password."
+msgstr "Log in met jouw studenten- of medewerkersaccount."
+
+msgid "Log out"
+msgstr "Uitloggen"
+
+msgid "Manager"
+msgstr "Manager"
+
+msgid "Membership"
+msgstr ""
+
+msgid "Membership|Active"
+msgstr ""
+
+#, fuzzy
+msgid "Membership|Bartender"
+msgstr "Tapper"
+
+#, fuzzy
+msgid "Membership|Manager"
+msgstr "Manager"
+
+#, fuzzy
+msgid "Membership|Planner"
+msgstr "Planner"
+
+msgid "Name"
+msgstr "Naam"
+
+msgid "New event"
+msgstr "Nieuw evenement"
+
+msgid "Oops!"
+msgstr "Oeps!"
+
+msgid "Organization"
+msgstr "Organisatie"
+
+msgid "Organization|Color"
+msgstr "Kleur"
+
+msgid "Organization|Name"
+msgstr "Naam"
+
+msgid "Organization|Slug"
+msgstr "Slug"
+
+msgid "Organizer"
+msgstr "Organisator"
+
+msgid "Participants"
+msgstr "Deelnemers"
+
+msgid "Password"
+msgstr "Wachtwoord"
+
+msgid "Planner"
+msgstr "Planner"
+
+msgid "Planning"
+msgstr "Planning"
+
+msgid "Previous page"
+msgstr "Vorige pagina"
+
+msgid "Print"
+msgstr "Print"
+
+msgid "Profile"
+msgstr "Profiel"
+
+msgid "Receives e-mail notifications"
+msgstr "Krijgt e-mailnotificaties"
+
+msgid "Risky event"
+msgstr ""
+
+msgid "Roles"
+msgstr "Rollen"
+
+msgid "Start"
+msgstr "Start"
+
+msgid "Student or employee account"
+msgstr ""
+
+msgid "Temporary products"
+msgstr "Tijdelijke producten"
+
+msgid "Tended"
+msgstr "Getapt"
+
+msgid "The bartenders of other participating organizations can also enroll."
+msgstr "Tappers van andere deelnemers kunnen ook inschrijven."
+
+msgid "This page requires an active organization."
+msgstr "Deze pagina heeft een primaire organisatie nodig."
+
+msgid "Time"
+msgstr "Tijd"
+
+msgid "To the home page"
+msgstr "Naar de homepage"
+
+msgid "User"
+msgstr "Gebruiker"
+
+msgid "Users"
+msgstr "Gebruikers"
+
+msgid "Users of %{organization}"
+msgstr "Gebruikers van %{organization}"
+
+#, fuzzy
+msgid "User|Admin"
+msgstr "Gebruiker"
+
+msgid "User|Email"
+msgstr "E-mailadres"
+
+#, fuzzy
+msgid "User|First name"
+msgstr "Gebruiker"
+
+#, fuzzy
+msgid "User|Last login"
+msgstr "Laatste login"
+
+#, fuzzy
+msgid "User|Last name"
+msgstr "Gebruiker"
+
+msgid "User|Password digest"
+msgstr "Wachtwoord hash"
+
+#, fuzzy
+msgid "User|Username"
+msgstr "Gebruiker"
+
+msgid "You arrived on a page that doesn't exist."
+msgstr "Je bent op een pagina die niet bestaat."
+
+msgid "You arrived on a page you don't have access to."
+msgstr "Je bent op een pagina waar jij niet bij mag."
+
+#, fuzzy
+msgid "already member"
+msgstr "is al een gebruiker"
+
+msgid "can't be before the end"
+msgstr "kan niet voor het eind zijn"
+
+msgid "does not accept tenders from %{organization}"
+msgstr "accepteert geen tappers van %{organization}"
+
+msgid "is already a member"
+msgstr "is al een gebruiker"
+
+#~ msgid "(never)"
+#~ msgstr "(nooit)"
+
+#~ msgid "Create membership"
+#~ msgstr "Gebruiker toevoegen"
+
+#~ msgid "Edit membership"
+#~ msgstr "Wijzig lidmaatschap"
+
+#~ msgid "Event|Begin"
+#~ msgstr "Begin"
+
+#~ msgid "Event|End"
+#~ msgstr "Einde"
+
+#~ msgid "User|Name"
+#~ msgstr "Naam"

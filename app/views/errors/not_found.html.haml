@@ -1,0 +1,16 @@
+- page_title '404'
+
+.row
+  .col-md-offset-2.col-md-4
+    %br
+    %br
+    = image_tag('sad_alexia')
+  .col-md-4
+    %h1
+      = _('Oops!')
+      %small Error 404
+    %h3= _("You arrived on a page that doesn't exist.")
+    %p= _('Here are some options you might consider:')
+    %p= link_to _('To the home page'), root_path
+    %p= link_to _('Previous page'), :back
+    %p= link_to _('Princess Alexia of the Netherlands'), 'https://www.koninklijkhuis.nl/leden-koninklijk-huis/prinses-alexia', target: '_blank'
